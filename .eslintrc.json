@@ -1,0 +1,49 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      // "@typescript-eslint",
+      "react-hooks",
+      "react"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      // "react-hooks/exhaustive-deps": "error",
+      "semi": [
+        "error",
+        "never"
+      ],
+      "@typescript-eslint/no-use-before-define": [
+        "error"
+      ],
+        "no-multiple-empty-lines": [
+          "warn",
+          {
+            "max": 1,
+            "maxEOF": 0,
+            "maxBOF": 0
+          }
+        ],
+        "@typescript-eslint/explicit-function-return-type": [
+          "error",
+          {
+            "allowExpressions": true
+          }
+        ],
+        "@typescript-eslint/no-explicit-any": [
+          "error"
+        ],
+        "brace-style": [
+          "error",
+          "1tbs",
+          {
+            "allowSingleLine": true
+          }
+        ]
+      }
+  }
